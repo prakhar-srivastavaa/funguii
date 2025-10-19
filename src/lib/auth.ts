@@ -1,0 +1,1 @@
+// Authentication utilities\nimport { NextAuthOptions } from 'next-auth';\n\nexport const authOptions: NextAuthOptions = {\n  providers: [],\n  callbacks: {\n    async session({ session, token }) {\n      return session;\n    },\n  },\n};
